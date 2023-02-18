@@ -17,57 +17,287 @@
   publisher={American Association of Physics Teachers,}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example.pdf},
-  selected={true}
+
+%saliencyGuidedSTN
+@article{CLJ:AppSciences:Guided:2021,
+AUTHOR = {Luna-Jim{\'{e}}nez, Cristina and Crist{\'{o}}bal-Mart{\'{i}}n, Jorge and Kleinlein, Ricardo and Gil-Mart{\'{i}}n, Manuel and Moya, Jos{\'{e}} M. and Fern{\'{a}}ndez-Mart{\'{i}}nez, Fernando},
+TITLE = {Guided Spatial Transformers for Facial Expression Recognition},
+JOURNAL = {Applied Sciences},
+VOLUME = {11},
+YEAR = {2021},
+NUMBER = {16},
+ARTICLE-NUMBER = {7217},
+URL = {https://www.mdpi.com/2076-3417/11/16/7217},
+ISSN = {2076-3417},
+ABSTRACT = {Spatial Transformer Networks are considered a powerful algorithm to learn the main areas of an image, but still, they could be more efficient by receiving images with embedded expert knowledge. This paper aims to improve the performance of conventional Spatial Transformers when applied to Facial Expression Recognition. Based on the Spatial Transformers’ capacity of spatial manipulation within networks, we propose different extensions to these models where effective attentional regions are captured employing facial landmarks or facial visual saliency maps. This specific attentional information is then hardcoded to guide the Spatial Transformers to learn the spatial transformations that best fit the proposed regions for better recognition results. For this study, we use two datasets: AffectNet and FER-2013. For AffectNet, we achieve a 0.35\% point absolute improvement relative to the traditional Spatial Transformer, whereas for FER-2013, our solution gets an increase of 1.49\% when models are fine-tuned with the Affectnet pre-trained weights.},
+DOI = {10.3390/app11167217}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example.pdf},
-  publisher={Wiley Online Library}
+
+
+@article{CLJ:Sensors:MMEmot:2021,
+AUTHOR = {Luna-Jim{\'{e}}nez, Cristina and Griol, David and Callejas, Zoraida and Kleinlein, Ricardo and Montero, Juan M. and Fern{\'{a}}ndez-Mart{\'{i}}nez, Fernando},
+TITLE = {Multimodal Emotion Recognition on RAVDESS Dataset Using Transfer Learning},
+JOURNAL = {Sensors},
+VOLUME = {21},
+YEAR = {2021},
+NUMBER = {22},
+ARTICLE-NUMBER = {7665},
+URL = {https://www.mdpi.com/1424-8220/21/22/7665},
+PubMedID = {34833739},
+ISSN = {1424-8220},
+ABSTRACT = {Emotion Recognition is attracting the attention of the research community due to the multiple areas where it can be applied, such as in healthcare or in road safety systems. In this paper, we propose a multimodal emotion recognition system that relies on speech and facial information. For the speech-based modality, we evaluated several transfer-learning techniques, more specifically, embedding extraction and Fine-Tuning. The best accuracy results were achieved when we fine-tuned the CNN-14 of the PANNs framework, confirming that the training was more robust when it did not start from scratch and the tasks were similar. Regarding the facial emotion recognizers, we propose a framework that consists of a pre-trained Spatial Transformer Network on saliency maps and facial images followed by a bi-LSTM with an attention mechanism. The error analysis reported that the frame-based systems could present some problems when they were used directly to solve a video-based task despite the domain adaptation, which opens a new line of research to discover new ways to correct this mismatch and take advantage of the embedded knowledge of these pre-trained models. Finally, from the combination of these two modalities with a late fusion strategy, we achieved 80.08\% accuracy on the RAVDESS dataset on a subject-wise 5-CV evaluation, classifying eight emotions. The results revealed that these modalities carry relevant information to detect users’ emotional state and their combination enables improvement of system performance.},
+DOI = {10.3390/s21227665}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example.pdf},
-  pages={549--560},
-  year={1905}
+
+
+@Article{CLJ:AppSciences:MMEmot:2022,
+AUTHOR = {Luna-Jim{\'{e}}nez, Cristina and Kleinlein, Ricardo and Griol, David and Callejas, Zoraida and Montero, Juan M. and Fern{\'{a}}ndez-Mart{\'{i}}nez, Fernando},
+TITLE = {A Proposal for Multimodal Emotion Recognition Using Aural Transformers and Action Units on RAVDESS Dataset},
+JOURNAL = {Applied Sciences},
+VOLUME = {12},
+YEAR = {2022},
+NUMBER = {1},
+ARTICLE-NUMBER = {327},
+URL = {https://www.mdpi.com/2076-3417/12/1/327},
+ISSN = {2076-3417},
+ABSTRACT = {Emotion recognition is attracting the attention of the research community due to its multiple applications in different fields, such as medicine or autonomous driving. In this paper, we proposed an automatic emotion recognizer system that consisted of a speech emotion recognizer (SER) and a facial emotion recognizer (FER). For the SER, we evaluated a pre-trained xlsr-Wav2Vec2.0 transformer using two transfer-learning techniques: embedding extraction and fine-tuning. The best accuracy results were achieved when we fine-tuned the whole model by appending a multilayer perceptron on top of it, confirming that the training was more robust when it did not start from scratch and the previous knowledge of the network was similar to the task to adapt. Regarding the facial emotion recognizer, we extracted the Action Units of the videos and compared the performance between employing static models against sequential models. Results showed that sequential models beat static models by a narrow difference. Error analysis reported that the visual systems could improve with a detector of high-emotional load frames, which opened a new line of research to discover new ways to learn from videos. Finally, combining these two modalities with a late fusion strategy, we achieved 86.70\% accuracy on the RAVDESS dataset on a subject-wise 5-CV evaluation, classifying eight emotions. Results demonstrated that these modalities carried relevant information to detect users\&rsquo; emotional state and their combination allowed to improve the final system performance.},
+DOI = {10.3390/app12010327}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example.pdf}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% CONFERENCES %%%%%%%%%%%%
+
+@inproceedings{Luna_Jim_nez_2021,
+doi = {10.21437/iberspeech.2021-15},
+year = 2021,
+month = {03},
+publisher = {{ISCA}},
+author = {Cristina Luna-Jim{\'{e}}nez and Ricardo Kleinlein and Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez and Jos{\'{e}} Manuel Pardo-Mu{\~{n}}oz and Jos{\'{e}} Manuel Moya-Fern{\'{a}}ndez},
+title = {{GTH}-{UPM} System for Albayzin Multimodal Diarization Challenge 2020},
+booktitle = {{IberSPEECH} 2021}}
+
+
+@inproceedings{Jimenez_2020,
+doi = {10.1109/wiiat50758.2020.00134},
+year = 2020,
+month = {12},
+publisher = {IEEE},
+author = {Cristina Luna-Jim{\'{e}}nez and Ricardo Kleinlein and Fernando Fernandez-Martinez and Jose M.Moya and Zoraida Callejas and Jose Manuel Pardo Munoz},
+title = {Spotting celebrities among peers in a {TV} show: how to exploit web querying for weakly supervised visual diarization},
+booktitle = { 2020 {IEEE}/{WIC}/{ACM} International Joint Conference on Web Intelligence and Intelligent Agent Technology ({WI}-{IAT})}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%% OTHERS %%%%%%%%%%%%%%%%
+@article{Fern_ndez_Mart_nez_2022,
+doi = {10.3390/app12031610},
+url = {https://doi.org/10.3390/app12031610},
+year = 2022, month = {02},
+publisher = {{MDPI} {AG}},
+volume = {12},
+number = {3},
+pages = {1610},
+author = {Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez and Cristina Luna-Jim{\'{e}}nez and Ricardo Kleinlein and David Griol and Zoraida Callejas and Juan Manuel Montero},
+title = {Fine-Tuning {BERT} Models for Intent Recognition Using a Frequency Cut-Off Strategy for Domain-Specific Vocabulary Extension},
+journal = {Applied Sciences} }
+
+
+@Article{app11167406,
+AUTHOR = {Kleinlein, Ricardo and Luna-Jim{\'{e}}nez, Cristina and Arias-Cuadrado, David and Ferreiros, Javier and Fern{\'{a}}ndez-Mart{\'{i}}nez, Fernando},
+TITLE = {Topic-Oriented Text Features Can Match Visual Deep Models of Video Memorability},
+JOURNAL = {Applied Sciences},
+VOLUME = {11},
+YEAR = {2021},
+NUMBER = {16},
+ARTICLE-NUMBER = {7406},
+URL = {https://www.mdpi.com/2076-3417/11/16/7406},
+ISSN = {2076-3417},
+ABSTRACT = {Not every visual media production is equally retained in memory. Recent studies have shown that the elements of an image, as well as their mutual semantic dependencies, provide a strong clue as to whether a video clip will be recalled on a second viewing or not. We believe that short textual descriptions encapsulate most of these relationships among the elements of a video, and thus they represent a rich yet concise source of information to tackle the problem of media memorability prediction. In this paper, we deepen the study of short captions as a means to convey in natural language the visual semantics of a video. We propose to use vector embeddings from a pretrained SBERT topic detection model with no adaptation as input features to a linear regression model, showing that, from such a representation, simpler algorithms can outperform deep visual models. Our results suggest that text descriptions expressed in natural language might be effective in embodying the visual semantics required to model video memorability.},
+DOI = {10.3390/app11167406}
+}
+@INPROCEEDINGS{INES2022,
+  author={Luna-Jim{\'{e}}nez, Cristina and Lutfi, Syaheerah Lebai and Fern{\'{a}}ndez-Mart{\'{i}}nez, Fernando and Tick, Andrea},
+  booktitle={2022 IEEE 26th International Conference on Intelligent Engineering Systems (INES)},
+  title={Measuring Trust at Zero-acquaintance: A Cross-cultural Study between Malaysians and Hungarians},
+  year={2022},
+  volume={},
+  number={},
+  pages={000267-000272},
+  doi={10.1109/INES56734.2022.9922615}}
+
+
+@inproceedings{Fern_ndez_Mart_nez_2021,
+doi = {10.21437/iberspeech.2021-10},
+url = {https://doi.org/10.21437/iberspeech.2021-10},
+year = 2021, month = {03}, publisher = {{ISCA}},
+author = {Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez and David Griol and Zoraida Callejas and Cristina Luna-Jim{\'{e}}nez},
+title = {An approach to intent detection and classification based on attentive recurrent neural networks},
+booktitle = {{IberSPEECH} 2021}}
+}
+
+
+@article{kleinlein2020predicting,
+  author    = {Ricardo Kleinlein and
+               Cristina Luna Jim{\'{e}}nez and
+               Zoraida Callejas and
+               Fernando Fern{\'{a}}ndez Mart{\'{i}}nez},
+  editor    = {Steven Hicks and
+               Debesh Jha and
+               Konstantin Pogorelov and
+               Alba Garc{\'{i}}a Seco de Herrera and
+               Dmitry Bogdanov and
+               Pierre{-}Etienne Martin and
+               Stelios Andreadis and
+               Minh{-}Son Dao and
+               Zhuoran Liu and
+               Jos{\'{e}} Vargas Quiros and
+               Benjamin Kille and
+               Martha A. Larson},
+  title     = {Predicting Media Memorability from a Multimodal Late Fusion of Self-Attention
+               and {LSTM} Models},
+  booktitle = {Working Notes Proceedings of the MediaEval 2020 Workshop, Online,
+               14-15 December 2020},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2882},
+  publisher = {CEUR-WS.org},
+  year      = {2020},
+  url       = {http://ceur-ws.org/Vol-2882/paper61.pdf},
+  timestamp = {Wed, 19 Oct 2022 07:49:00 +0200},
+  biburl    = {https://dblp.org/rec/conf/mediaeval/KleinleinJCM20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{Kleinlein_2019,
+doi = {10.21437/interspeech.2019-2799},
+url = {https://doi.org/10.21437/interspeech.2019-2799},
+year = 2019, month = {09}, publisher = {{ISCA}},
+author = {Ricardo Kleinlein and Cristina Luna-Jim{\'{e}}nez and Juan Manuel Montero and Zoraida Callejas and Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez},
+title = {Predicting Group-Level Skin Attention to Short Movies from Audio-Based {LSTM}-Mixture of Experts Models},
+booktitle = {Interspeech 2019}}}
+
+
+@article{Kleinlein_2019_electronics,
+doi = {10.3390/electronics8060671},
+url = {https://doi.org/10.3390/electronics8060671},
+year = 2019, month = {06},
+publisher = {{MDPI} {AG}}, volume = {8}, number = {6},
+pages = {671},
+author = {Ricardo Kleinlein and {\'{A}}lvaro Garc{\'{i}}a-Faura and Cristina Luna-Jim{\'{e}}nez and Juan Manuel Montero and Fernando D{\'{i}}az-de-Mar{\'{i}}a and Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez},
+title = {Predicting Image Aesthetics for Intelligent Tourism Information Systems},
+journal = {Electronics}}}
+
+@inproceedings{confbiLSTM,
+  author    = {Sergio Esteban Romero and
+               Ricardo Kleinlein and
+               Cristina Luna-Jim{\'{e}}nez and
+               Juan Manuel Montero and
+               Fernando Fern{\'{a}}ndez Mart{\'{i}}nez},
+  editor    = {Manuel Montes and
+               Paolo Rosso and
+               Julio Gonzalo and
+               Mario Ezra Arag{\'{o}}n and
+               Rodrigo Agerri and
+               Miguel {\'{A}}ngel {\'{A}}lvarez Carmona and
+               Elena {\'{A}}lvarez Mellado and
+               Jorge Carrillo{-}de{-}Albornoz and
+               Luis Chiruzzo and
+               Larissa A. de Freitas and
+               Helena G{\'{o}}mez{-}Adorno and
+               Yoan Guti{\'{e}}rrez and
+               Salud Mar{\'{i}}a Jim{\'{e}}nez Zafra and
+               Salvador Lima and
+               Flor Miriam Plaza del Arco and
+               Mariona Taul{\'{e}}},
+  title     = {{GTH-UPM} at DETOXIS-IberLEF 2021: Automatic Detection of Toxic Comments
+               in Social Networks},
+  booktitle = {Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2021)
+               co-located with the Conference of the Spanish Society for Natural
+               Language Processing {(SEPLN} 2021), {XXXVII} International Conference
+               of the Spanish Society for Natural Language Processing., M{\'{a}}laga,
+               Spain, September, 2021},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2943},
+  pages     = {533--546},
+  publisher = {CEUR-WS.org},
+  year      = {2021},
+  url       = {http://ceur-ws.org/Vol-2943/detoxis_paper1.pdf},
+  timestamp = {Wed, 29 Sep 2021 08:20:16 +0200},
+  biburl    = {https://dblp.org/rec/conf/sepln/RomeroKJMF21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@inproceedings{jimenez22_iberspeech,
+  author={Cristina Luna-Jim{\'{e}}nez and Syaheerah Lebai Lutfi and Manuel Gil-Mart{\'{i}}n and Ricardo Kleinlein and Juan M. Montero and Fernando Fern{\'{1}}ndez-Mart{\'{i}}nez},
+  title={{Measuring trust at zero-acquaintance using acted-emotional videos }},
+  year=2022,
+  booktitle={Proc. IberSPEECH 2022},
+  pages={206--210},
+  doi={10.21437/IberSPEECH.2022-42}
+}
+
+
+@inproceedings{jimenez22b_iberspeech,
+  author={Cristina Luna-Jim{\'{e}}nez and Ricardo Kleinlein and Syaheerah Lebai Lutfi and Juan M. Montero and Fernando Fern{\'{a}}ndez-Mart{\'{i}}nez},
+  title={{Analysis of Trustworthiness Recognition models from an aural and emotional perspective }},
+  year=2022,
+  booktitle={Proc. IberSPEECH 2022},
+  pages={81--85},
+  doi={10.21437/IberSPEECH.2022-17}
+}
+
+
+
+@inproceedings{KleinleinJM21,
+  author    = {Ricardo Kleinlein and
+               Cristina Luna-Jim{\'{e}}nez and
+               Fernando Fern{\'{a}}ndez Mart{\'{i}}nez},
+  editor    = {Steven Hicks and
+               Konstantin Pogorelov and
+               Andreas Lommatzsch and
+               Alba Garc{\'{i}}a Seco de Herrera and
+               Pierre{-}Etienne Martin and
+               Syed Zohaib Hassan and
+               Alastair Porter and
+               Asem Kasem and
+               Stelios Andreadis and
+               Mathias Lux and
+               Marc Gallofr{\'{e}} Oca{\~{n}}a and
+               Alex Liu and
+               Martha A. Larson},
+  title     = {{THAU-UPM} at MediaEval 2021: From Video Semantics To Memorability
+               Using Pretrained Transformers},
+  booktitle = {Working Notes Proceedings of the MediaEval 2021 Workshop, Online,
+               13-15 December 2021},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {3181},
+  publisher = {CEUR-WS.org},
+  year      = {2021},
+  url       = {http://ceur-ws.org/Vol-3181/paper42.pdf},
+  timestamp = {Wed, 28 Dec 2022 14:29:13 +0100},
+  biburl    = {https://dblp.org/rec/conf/mediaeval/KleinleinJM21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{GilMartn2023,
+  doi = {10.7557/18.6809},
+  url = {https://doi.org/10.7557/18.6809},
+  year = {2023},
+  month = 01,
+  publisher = {UiT The Arctic University of Norway},
+  volume = {4},
+  author = {Manuel Gil-Mart{\'{\i}}n and Cristina Luna-Jim{\'{e}}nez and Fernando Fern{\'{a}}ndez-Mart{\'{\i}}nez and Rub{\'{e}}n San-Segundo},
+  title = {Signal and Visual Approaches for Parkinson's Disease Detection from Spiral Drawings},
+  journal = {Proceedings of the Northern Lights Deep Learning Workshop}
 }
